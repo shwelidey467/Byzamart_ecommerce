@@ -11,6 +11,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
+import com.example.byzamart.presentation.SignUpScreen
+import com.example.byzamart.ui.theme.ByzaMartTheme
+
+//import com.example.byzamart.ui.theme.ByzaMartTheme
 
 class MainActivity : ComponentActivity() {
 
@@ -18,53 +24,12 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
+            ByzaMartTheme {
 
-            Column(
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(20.dp),
-                verticalArrangement = Arrangement.Center,
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-
-                Text(
-                    text = "ByzaMart",
-                    fontSize = 32.sp,
-                    fontWeight = FontWeight.Bold
-                )
-
-                Spacer(modifier = Modifier.height(30.dp))
-
-                OutlinedTextField(
-                    value = "",
-                    onValueChange = {},
-                    label = { Text("Email") }
-                )
-
-                Spacer(modifier = Modifier.height(16.dp))
-
-                OutlinedTextField(
-                    value = "",
-                    onValueChange = {},
-                    label = { Text("Password") }
-                )
-
-                Spacer(modifier = Modifier.height(24.dp))
-
-                Button(
-                    onClick = { }
-                ) {
-                    Text("Login")
-                }
-
-                Spacer(modifier = Modifier.height(20.dp))
-
-                Text(text = "Continue as Buyer")
-
-                Spacer(modifier = Modifier.height(10.dp))
-
-                Text(text = "Continue as Seller")
+                SignUpScreen()
             }
         }
     }
+
 }
+

@@ -56,16 +56,22 @@ fun LoginScreen() {
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Top
     ) {
-        Text(text="Welcome to ByzaMart", fontSize = 30.sp, fontWeight = FontWeight.Bold)
+        Text(text="Welcome to ByzaMart",
+            fontSize = 30.sp,
+            fontWeight = FontWeight.Bold)
         Spacer(modifier = Modifier.height(16.dp))
-        Icon(imageVector = Icons.Default.ShoppingCart, contentDescription = "Shopping Cart", tint = Color.Blue, modifier = Modifier.size(70.dp).padding(top = 30.dp))
+        Icon(imageVector = Icons.Default.ShoppingCart,
+            contentDescription = "Shopping Cart",
+            tint = Color.Blue, modifier = Modifier.size(70.dp).padding(top = 30.dp))
     }
     Column(
         modifier = Modifier.fillMaxSize().padding(top=0.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
     ) {
-            Text(text="ByzaMart",fontSize = 30.sp, fontWeight = FontWeight.Bold)
+            Text(text="ByzaMart",
+                fontSize = 30.sp,
+                fontWeight = FontWeight.Bold)
         Spacer(modifier = Modifier.height(16.dp))
         CustomTextFields(
             value = email,
@@ -130,7 +136,10 @@ fun LoginScreen() {
         ) {
             Image(painter = painterResource(id = com.example.byzamart.R.drawable.google), contentDescription = null, modifier = Modifier.size(24.dp))
             Spacer(modifier = Modifier.width(8.dp))
-            Text(text = "Sign Up with Google", fontSize = 14.sp, fontWeight = FontWeight.Bold,color =Color.White)
+            Text(text = "Sign Up with Google",
+                fontSize = 14.sp,
+                fontWeight = FontWeight.Bold,
+                color =Color.White)
 
 
         }

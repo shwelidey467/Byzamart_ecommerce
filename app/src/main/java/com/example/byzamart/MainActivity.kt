@@ -15,9 +15,10 @@ import androidx.navigation.NavController
 import androidx.navigation.compose.rememberNavController
 import com.example.byzamart.presentation.SignUpScreen
 import com.example.byzamart.ui.theme.ByzaMartTheme
+import dagger.hilt.android.AndroidEntryPoint
 
 //import com.example.byzamart.ui.theme.ByzaMartTheme
-
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

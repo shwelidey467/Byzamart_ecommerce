@@ -5,9 +5,9 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 
-@Module
+/*@Module
 @InstallIn(SingletonComponent::class)
 class DomainModule {
     @Provides
 
-}
+}*/
